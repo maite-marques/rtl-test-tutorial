@@ -13,7 +13,7 @@ describe('Teste da aplicação toda', () => {
     expect(home).toBeInTheDocument();
   });
 });
-it('should render the component About', () => {
+it.skip('should render the component About', () => {
   const { getByText, history } = renderWithRouter(<TestRenderRoutes />);
   fireEvent.click(getByText(/Sobre/i));
   const pathname = history.location.pathname;
@@ -23,7 +23,7 @@ it('should render the component About', () => {
   expect(aboutAll).toBeInTheDocument();
 });
 
-it('should test an unexistent path, and render Not Found', () => {
+it.skip('should test an unexistent path, and render Not Found', () => {
   const { getByText , history } = renderWithRouter(<TestRenderRoutes />);
 
   history.push('/pagina/que-nao-existe/');

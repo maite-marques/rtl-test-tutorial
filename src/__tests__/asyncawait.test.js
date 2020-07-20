@@ -30,13 +30,9 @@ test('Pokémons above 50 speed base', () => {
   });
 });
 
-
-
 test(' ASYNC AWAIT - Pokémons above 50 speed base', async () => {
   starterPokemons.push({ name: 'Charizard', type: 'Fire/Flying', speed: 100 })
   const data = await filterBySpeed(50);
   expect.assertions(1);
   expect(data).toStrictEqual(['Charmander', 'Pikachu', 'Charizard']);
 });
-
-
