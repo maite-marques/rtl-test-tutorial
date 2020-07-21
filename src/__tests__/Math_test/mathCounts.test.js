@@ -11,8 +11,6 @@ describe('Matcher - .toBe()', () => {
   });
 });
 
-
-
 // TO EQUAL - Objetos e Arrays
 describe.skip('Matcher - Objetos e Arrays .toEqual()', () => {
   test('object assignment', () => {
@@ -82,7 +80,7 @@ test('there is no I in team', () => {
 });
 
 test('but there is a "stop" in Christoph', () => {
-  expect('Christoph').toMatch(/stop/);
+  expect('Christoph').toMatch('stop');
 });
 
 // ARRAYS e iterables

@@ -7,6 +7,7 @@ const pokeTips = (callback) => {
 
 test('passando um string', (done) => {
   const callback = (data) => {
+    console.log(data);
     expect(data).toBe('Bulbasaur é o melhor pokémon para começar.')
     // sem o done o teste termina antes do pokeTips chamar a função. - testar outro pokemon
     // retorna positivo - FALSO POSITIVO
